@@ -17,8 +17,8 @@ This training helped me better understand spatial data analysis principles and u
 
 ## Software Download
 
-For those interested in downloading **Surfer** software, you can get it from the official site:  
-[Surfer Software Download](https://odv.awi.de/)
+For those interested in downloading **Surfer** software, you can get it from the following link:  
+[Surfer Software Download](https://fr.freedownloadmanager.org/Windows-PC/Surfer-GRATUIT.html)
 
 ## Files and Resources
 
