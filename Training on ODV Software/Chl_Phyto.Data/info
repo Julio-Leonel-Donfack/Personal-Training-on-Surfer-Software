@@ -1,0 +1,62 @@
+netcdf Chl_Phyto {
+dimensions:
+	time = 30 ;
+	depth = 16 ;
+	latitude = 4 ;
+	longitude = 7 ;
+variables:
+	double time(time) ;
+		string time:standard_name = "time";
+		string time:long_name = "Time";
+		string time:units = "seconds since 1970-01-01 00:00:00";
+		string time:calendar = "gregorian";
+		string time:axis = "T";
+	float depth(depth) ;
+		string depth:standard_name = "depth";
+		string depth:long_name = "Depth";
+		string depth:units = "m";
+		string depth:unit_long = "Meters";
+		string depth:axis = "Z";
+		string depth:positive = "down";
+	float latitude(latitude) ;
+		string latitude:standard_name = "latitude";
+		string latitude:long_name = "Latitude";
+		string latitude:units = "degrees_north";
+		string latitude:unit_long = "Degrees North";
+		string latitude:axis = "Y";
+	float longitude(longitude) ;
+		string longitude:standard_name = "longitude";
+		string longitude:long_name = "Longitude";
+		string longitude:units = "degrees_east";
+		string longitude:unit_long = "Degrees East";
+		string longitude:axis = "X";
+	float chl(time, depth, latitude, longitude) ;
+		string chl:units = "mg m-3";
+		chl:_FillValue = nanf ;
+		string chl:standard_name = "mass_concentration_of_chlorophyll_a_in_sea_water";
+		string chl:long_name = "Total Chlorophyll";
+		string chl:unit_long = "milligram of Chlorophyll per cubic meter";
+		chl:valid_max = 100.f ;
+		chl:valid_min = 0.f ;
+	float phyc(time, depth, latitude, longitude) ;
+		string phyc:units = "mmol m-3";
+		phyc:_FillValue = nanf ;
+		string phyc:standard_name = "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water";
+		string phyc:long_name = "Total Phytoplankton";
+		string phyc:unit_long = "millimoles per cubic meter";
+		phyc:valid_max = 150.f ;
+		phyc:valid_min = 0.f ;
+
+// global attributes:
+		string :Conventions = "CF-1.11";
+		string :title = "daily mean fields from Global Ocean Biogeochemistry Analysis and Forecast";
+		string :institution = "Mercator Ocean";
+		string :producer = "CMEMS - Global Monitoring and Forecasting Centre";
+		string :credit = "E.U. Copernicus Marine Service Information (CMEMS)";
+		string :contact = "https://marine.copernicus.eu/contact";
+		string :references = "http://marine.copernicus.eu";
+		string :subset:source = "ARCO data downloaded from the Marine Data Store using the MyOcean Data Portal";
+		string :subset:productId = "GLOBAL_ANALYSISFORECAST_BGC_001_028";
+		string :subset:datasetId = "cmems_mod_glo_bgc-pft_anfc_0.25deg_P1D-m_202311";
+		string :subset:date = "2025-03-20T15:38:56.606Z";
+}

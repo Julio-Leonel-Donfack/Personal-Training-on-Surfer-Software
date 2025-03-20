@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.23" collection="Chloro_Phyto_November_2023">
+<NetcdfEmulation primaryVarID="0">
+<Dimension index="0" varID="0" isLeadDim="1"/>
+<Dimension index="1" endIDX="0" varID="1" length="1"/>
+<Dimension index="2" varID="2"/>
+<Dimension index="3" varID="3"/>
+<MetaVariable index="3" trgVID="3" colID="3"/>
+<MetaVariable index="4" trgVID="4" colID="2"/>
+<MetaVariables>
+<digits_counts>0,0,0,3,3,0,0,0,0,0,0</digits_counts>
+</MetaVariables>
+<Variables>
+<digits_counts>4,2,2,2,2,2</digits_counts>
+</Variables>
+</NetcdfEmulation>
+<GeographicMap>
+<MapDomain lon_max="131.36250" lat_max="-2.17500" lon_min="129.63750" lat_min="-3.07500"/>
+<AutoMapLayerSettings coastline_fill="F" land_topography="T"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="-0.1" color="1" small_size="0.348359" type="0"/>
+<Window>
+<Axis cb_align="1"/>
+<Geometry x_left="129.637" y_offset_bb="7" y_length_bb="7" y_top="-2.175" x_length_bb="7" x_offset_bb="1" y_bottom="-3.075" x_projection="100" x_right="131.363" y_projection="100"/>
+</Window>
+</MapWindow>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis var_id="0" is_reversed="F" var_list="2"/>
+<!--Latitude-->
+<yAxis var_id="1" is_reversed="F" var_list="2"/>
+<!--chl @ time=first-->
+<zAxis var_id="4" is_reversed="F" var_list="2"/>
+</AxisVariables>
+<Modes plot_mode="7" window_type="0" window_mode="3"/>
+<Contours draw="T">
+<Contour z_value="0.135" font_size="7"/>
+<Contour z_value="0.14" font_size="7"/>
+<Contour z_value="0.145" font_size="7"/>
+<Contour z_value="0.15" font_size="7"/>
+<Contour z_value="0.155" font_size="7"/>
+<Contour z_value="0.16" font_size="7"/>
+<Contour z_value="0.165" font_size="7"/>
+<Contour z_value="0.17" font_size="7"/>
+</Contours>
+<Gridding auto_scale_lengths="T" draw_shaded="T" x_scale_length="6.07032" y_scale_length="5.41991"/>
+<BadEstimateHiding hide="F" max_distance="3"/>
+<Window>
+<Geometry x_left="129.637" y_offset_bb="2" y_length_bb="17" y_top="-2.175" x_length_bb="15.5" x_offset_bb="11" y_bottom="-3.075" x_projection="100" x_right="131.363" y_projection="100"/>
+<ColorScale z_range_start="0.135" z_range_end="0.175"/>
+<GraphicsObjects>
+<GObject post_data="T" is_automatic="T" own_coordinates="F" dragging="F" clipping="F" type="1">
+<Annotation y_coordinate="14.7477" x_coordinate="26.5" background_color="-1" text_alignment="4" text_color="0" text="chl @ time=first" font_size="12.6289" frame_type="0" angle="0" frame_color="-1" frame_width="-1"/>
+</GObject>
+</GraphicsObjects>
+</Window>
+</DataWindow>
+<IsoSurfaceVariables>
+<!--chl @ time=first-->
+<IsoVariable var_id="1" surface_value="first" surface_var_id="0"/>
+<!--phyc @ time=first-->
+<IsoVariable var_id="5" surface_value="first" surface_var_id="0"/>
+</IsoSurfaceVariables>
+</View>
